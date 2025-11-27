@@ -68,6 +68,20 @@ section {
   margin-bottom: 1.5rem;
 }
 
+/* Games Library */
+/* Services */
+#games .card-footer {
+  font-weight: bold;
+  color: var(--highlight-color);
+  background-color: transparent;
+}
+
+#games .card {
+  margin-bottom: 1.5rem;
+}
+
+
+
 /* grid visualization CSS for testing */
 /* .container,
 .row {
