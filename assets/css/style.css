@@ -69,7 +69,6 @@ section {
 }
 
 /* Games Library */
-/* Services */
 #games .card-footer {
   font-weight: bold;
   color: var(--highlight-color);
@@ -79,6 +78,8 @@ section {
 #games .card {
   margin-bottom: 1.5rem;
 }
+
+
 
 
 
@@ -101,6 +102,10 @@ section {
   #services .card-body {
     min-height: 191px;
   }
+  /* Make all game cards the same height for consistency */
+  #games .card-body {
+    min-height: 191px;
+  }
 }
 
 /* Medium devices (tables, 992px and up) */
@@ -117,6 +122,10 @@ section {
   #services .card-body {
     min-height: 220px;
   }
+    /* Make all game cards the same height for consistency */
+  #games .card-body {
+    min-height: 241px;
+  }
 }
 
 /* XXL devices (tables, 1400px and up) */
@@ -125,4 +134,8 @@ section {
   #services .card-body {
     min-height: 195px;
   }
+    /* Make all game cards the same height for consistency
+  #games .card-body {
+    min-height: 195px;
+  } */
 }
