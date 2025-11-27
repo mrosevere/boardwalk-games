@@ -69,19 +69,10 @@ section {
 }
 
 /* Games Library */
-#games .card-footer {
-  font-weight: bold;
-  color: var(--highlight-color);
-  background-color: transparent;
+#new-games .card,
+#fav-games .card {
+    border: none;
 }
-
-#games .card {
-  margin-bottom: 1.5rem;
-}
-
-
-
-
 
 /* grid visualization CSS for testing */
 /* .container,
@@ -102,10 +93,6 @@ section {
   #services .card-body {
     min-height: 191px;
   }
-  /* Make all game cards the same height for consistency */
-  #games .card-body {
-    min-height: 191px;
-  }
 }
 
 /* Medium devices (tables, 992px and up) */
@@ -122,10 +109,6 @@ section {
   #services .card-body {
     min-height: 220px;
   }
-    /* Make all game cards the same height for consistency */
-  #games .card-body {
-    min-height: 241px;
-  }
 }
 
 /* XXL devices (tables, 1400px and up) */
@@ -134,8 +117,4 @@ section {
   #services .card-body {
     min-height: 195px;
   }
-    /* Make all game cards the same height for consistency
-  #games .card-body {
-    min-height: 195px;
-  } */
 }
