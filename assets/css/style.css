@@ -105,6 +105,9 @@ section {
     color: var(--secondary-color);
 }
 
+#contact .table-dark * {
+    background-color: transparent;
+}
 
 /* grid visualization CSS for testing */
 /* .container,
