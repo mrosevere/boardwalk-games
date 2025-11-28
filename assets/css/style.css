@@ -104,6 +104,12 @@ section {
 #contact .social-links i:hover {
     color: var(--secondary-color);
 }
+
+#open-times h3 {
+    font-size: xx-large;
+}
+
+
 /* grid visualization CSS for testing */
 /* .container,
 .row {
@@ -121,7 +127,7 @@ section {
 @media screen and (min-width: 768px) {
   /* Make all service cards the same height for consistency */
   #services .card-body {
-    min-height: 191px;
+    margin-top: 100px;
   }
 }
 
