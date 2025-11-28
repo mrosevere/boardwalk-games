@@ -55,6 +55,18 @@ section {
     color: white;
 }
 
+.custom-button-outline {
+    border: 2px solid var(--highlight-color);
+    padding: 7px 25px;
+    color: var(--highlight-color);
+    background-color: transparent;
+}
+
+.custom-button-outline:hover {
+    border: 2px solid var(--highlight-color);
+    color: white;
+    background-color: var(--highlight-color);
+}
 
 /* Navbar CSS */
 
