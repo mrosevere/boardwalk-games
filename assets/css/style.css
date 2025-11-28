@@ -135,6 +135,12 @@ section {
     background-color: transparent;
 }
 
+#discount {
+  color: white;
+  background-color: var(--highlight-color);
+  
+}
+
 /* grid visualization CSS for testing */
 /* .container,
 .row {
