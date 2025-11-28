@@ -396,16 +396,19 @@
                   type="email"
                   class="form-control"
                   id="email"
+                  name="email"
                   aria-label="email field"
                   required
                 />
               </div>
-              <div>
+              <div class="mb-3">
+                <label for="game-select" class="form-label">Select game</label>
                 <select
                   id="game-select"
                   class="form-select"
-                  aria-label="Game Selection"
+                  id="selected-game"
                   name="selected-game"
+                  aria-label="Game Selection"
                   required
                 >
                   <option value="" selected>Select game</option>
@@ -419,8 +422,22 @@
                   <option value="cluedo">Cluedo</option>
                 </select>
               </div>
-
-              <button type="submit" class="btn custom-button-outline">Submit</button>
+              <div class="mb-3">
+                <label for="requested-date" class="form-label"
+                  >Requested Date</label
+                >
+                <input
+                  type="date"
+                  class="form-select"
+                  id="requested-date"
+                  name="requested-date"
+                />
+              </div>
+              <div>
+                <button type="submit" class="btn custom-button-outline">
+                  Submit
+                </button>
+              </div>
             </form>
           </div>
         </div>
