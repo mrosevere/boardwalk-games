@@ -105,10 +105,6 @@ section {
     color: var(--secondary-color);
 }
 
-#open-times h3 {
-    font-size: xx-large;
-}
-
 
 /* grid visualization CSS for testing */
 /* .container,
