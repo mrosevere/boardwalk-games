@@ -352,104 +352,122 @@
 
       <!-- Games Reservation Section -->
       <section id="game-reservation" class="container section mt-auto">
-        <!-- Section Heading -->
+        <!-- Parent Row -->
         <div class="row">
-          <!-- Parent column to set the width of the section based on the device size -->
+          <!-- Parent Column - Set the width of the section based on the device size -->
           <div class="col-12 col-md-8 col-xl-8 mx-auto">
-            <h2 class="display-6 text-center">Reserve a game</h2>
-            <p>
-              Reserve a board game for your next visit to Boardwalk Games. Pick
-              your challenge, and let the adventure begin! Fill out your details
-              and preferred game below, and we'll have it set aside for you when
-              you arrive.
-            </p>
-          </div>
-        </div>
+            <!-- Heading Row -->
+            <div class="row col-12">
+              <!-- Heading column -->
+              <div>
+                <!-- heading content -->
+                <h2 class="display-6 text-center">Reserve a game</h2>
+                <p>
+                  Reserve a board game for your next visit to Boardwalk Games.
+                  Pick your challenge, and let the adventure begin! Fill out
+                  your details and preferred game below, and we'll have it set
+                  aside for you when you arrive.
+                </p>
+              </div>
+            </div>
 
-        <!-- Reservation Form -->
-        <div class="row justify-content-center">
-          <div class="col-12 col-md-10 col-xl-9 mx-auto">
-            <div class="col-12 col-md-10 col-xl-12">
-              <form action="success.html" method="GET">
-                <div class="row">
-                  <div class="col-12 col-md-10 col-xl-3 mb-3 mx-auto">
-                    <label for="full-name" class="form-label">Full Name</label>
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="full-name"
-                      name="full-name"
-                      required
-                    />
-                  </div>
-                  <div class="col-12 col-md-10 col-xl-3 mb-3 mx-auto">
-                    <label for="phone" class="form-label">Phone Number</label>
-                    <input
-                      type="number"
-                      class="form-control"
-                      id="phone"
-                      name="phone"
-                      required
-                    />
-                  </div>
-
-                  <div class="col-12 col-md-10 col-xl-3 mb-3 mx-auto">
-                    <label for="email" class="form-label">Email Address</label>
-                    <input
-                      type="email"
-                      class="form-control"
-                      id="email"
-                      name="email"
-                      required
-                    />
-                  </div>
+            <!-- Reservation Form -->
+            <form action="success.html" method="GET">
+              <!-- Name/Phone/email row -->
+              <div class="row">
+                <!-- Name column -->
+                <div class="col-xl-4 mb-3">
+                  <label for="full-name" class="form-label">Full Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="full-name"
+                    name="full-name"
+                    required
+                  />
                 </div>
-                <div class="row">
-                  <div id="bb" class="co-12 col-md-10 col-xl-6 mb-3 mx-auto">
-                    <label for="game-select" class="form-label"
-                      >Select game</label
-                    >
-                    <select
-                      id="game-select"
-                      class="form-select"
-                      name="selected-game"
-                      required
-                    >
-                      <option value="" selected>Select game</option>
-                      <option value="galaxy-pioneers">Galaxy Pioneers</option>
-                      <option value="mystic-woods">Mystic Woods</option>
-                      <option value="captains-gambit">Captain's Gambit</option>
-                      <option value="critter-quest">Critter Quest</option>
-                      <option value="setters-of-catan">Setters of Catan</option>
-                      <option value="monopoly">Monopoly</option>
-                      <option value="exploding-kittens">
-                        Exploding Kittens
-                      </option>
-                      <option value="cluedo">Cluedo</option>
-                    </select>
-                  </div>
 
-                  <div id="bb" class="col-12 col-md-10 col-xl-3 mb-3 mx-auto">
-                    <label for="requested-date" class="form-label"
-                      >Requested Date</label
-                    >
-                    <input
-                      type="date"
-                      class="form-control"
-                      id="requested-date"
-                      name="requested-date"
-                      required
-                    />
-                  </div>
+                <!-- Phone column -->
+                <div class="col-xl-4 mb-3">
+                  <label for="phone" class="form-label">Phone Number</label>
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="phone"
+                    name="phone"
+                    required
+                  />
                 </div>
-                <div class="col-12 col-md-10 col-xl-3 text-end mt-3 mx-auto">
+
+                <!-- Email column -->
+                <div class="col-xl-4 mb-3">
+                  <label for="email" class="form-label">Email Address</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    name="email"
+                    required
+                  />
+                </div>
+                <!-- end of name/email/phone row -->
+              </div>
+
+              <!-- select game/requested date row -->
+              <div class="row">
+                <!-- select game column -->
+                <div class="col-xl-8 mb-3">
+                  <label for="game-select" class="form-label"
+                    >Select game</label
+                  >
+                  <select
+                    id="game-select"
+                    class="form-select"
+                    name="selected-game"
+                    required
+                  >
+                    <option value="" selected>Select game</option>
+                    <option value="galaxy-pioneers">Galaxy Pioneers</option>
+                    <option value="mystic-woods">Mystic Woods</option>
+                    <option value="captains-gambit">Captain's Gambit</option>
+                    <option value="critter-quest">Critter Quest</option>
+                    <option value="setters-of-catan">Setters of Catan</option>
+                    <option value="monopoly">Monopoly</option>
+                    <option value="exploding-kittens">Exploding Kittens</option>
+                    <option value="cluedo">Cluedo</option>
+                  </select>
+                </div>
+
+                <!-- Requested date column -->
+                <div class="col-xl-4 mb-3">
+                  <label for="requested-date" class="form-label"
+                    >Requested Date</label
+                  >
+                  <input
+                    type="date"
+                    class="form-control"
+                    id="requested-date"
+                    name="requested-date"
+                    required
+                  />
+                </div>
+                <!-- select game/requested date END row -->
+              </div>
+              <!-- button row -->
+              <div class="row">
+                <!-- button column -->
+                <div class="col-12 text-end mt-3 mx-auto">
                   <button type="submit" class="btn custom-button-outline">
                     Submit
                   </button>
                 </div>
-              </form>
-            </div>
+              </div>
+
+              <!-- End of </form> -->
+            </form>
+            <!-- Parent Column - Set the width of the section based on the device size END-->
           </div>
+          <!-- Parent Row -->
         </div>
       </section>
     </main>
