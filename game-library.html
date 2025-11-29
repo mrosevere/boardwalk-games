@@ -354,7 +354,7 @@
       <section id="game-reservation" class="container section mt-auto">
         <!-- Section Heading -->
         <div class="row">
-          <div class="col-12 col-xl-8 mx-auto">
+          <div class="col-12 col-md-8 col-xl-8 mx-auto">
             <h2 class="display-6 text-center">Reserve a game</h2>
             <p>
               Reserve a board game for your next visit to Boardwalk Games. Pick
@@ -367,10 +367,10 @@
 
         <!-- Reservation Form -->
         <div class="row justify-content-center">
-          <div class="col-12 col-xl-12">
+          <div class="col-12 col-md-10 col-xl-12">
             <form action="success.html" method="GET">
               <div class="row">
-                <div class="col-12 col-xl-4 mb-3">
+                <div class="col-12 col-md-10 col-xl-4 mb-3 mx-auto">
                   <label for="full-name" class="form-label">Full Name</label>
                   <input
                     type="text"
@@ -380,7 +380,7 @@
                     required
                   />
                 </div>
-                <div class="col-12 col-xl-4 mb-3">
+                <div class="col-12 col-md-10 col-xl-4 mb-3 mx-auto">
                   <label for="phone" class="form-label">Phone Number</label>
                   <input
                     type="number"
@@ -391,7 +391,7 @@
                   />
                 </div>
 
-                <div class="col-12 col-xl-4 mb-3">
+                <div class="col-12 col-md-10 col-xl-4 mb-3 mx-auto">
                   <label for="email" class="form-label">Email Address</label>
                   <input
                     type="email"
@@ -403,20 +403,7 @@
                 </div>
               </div>
               <div class="row">
-                <div class="col-12 col-xl-6 mb-3">
-                  <label for="requested-date" class="form-label"
-                    >Requested Date</label
-                  >
-                  <input
-                    type="date"
-                    class="form-control"
-                    id="requested-date"
-                    name="requested-date"
-                    required
-                  />
-                </div>
-
-                <div class="co-12 col-xl-6 mb-3">
+                <div class="co-12 col-md-10 col-xl-6 mb-3 mx-auto">
                   <label for="game-select" class="form-label"
                     >Select game</label
                   >
@@ -437,8 +424,21 @@
                     <option value="cluedo">Cluedo</option>
                   </select>
                 </div>
+
+                <div class="col-12 col-md-10 col-xl-6 mb-3 mx-auto">
+                  <label for="requested-date" class="form-label"
+                    >Requested Date</label
+                  >
+                  <input
+                    type="date"
+                    class="form-control"
+                    id="requested-date"
+                    name="requested-date"
+                    required
+                  />
+                </div>
               </div>
-              <div class="text-end">
+              <div class="col-12 col-md-10 col-xl-6 text-end mt-3 mx-auto">
                 <button type="submit" class="btn custom-button-outline">
                   Submit
                 </button>
